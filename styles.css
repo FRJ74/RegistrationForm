@@ -40,10 +40,37 @@ fieldset:last-of-type {
 input, textarea, select {
   width: 100%;
   margin: 10px 0 0 0;
+  min-height: 2em;
 }
 
 /* Align the 2 radios & checkbox with text */
 .inline {
   width: unset;
   margin: 0 0.5em 0 0;
+  vertical-align: middle;
 }
+
+/* Add background-color & a border to input and textarea */
+input, textarea {
+  background-color: #0a0a23;
+  border: 1px solid #0a0a23;
+  color: #ffffff;
+  }
+
+  /* Style submit button with an attribute selector */
+
+  input[type="submit"] {
+    display: block;
+    width: 60%;
+    margin: 1em auto;
+    height: 2em;
+    font-size: 1.1rem;
+    background-color: #3b3b4f;
+    border-color: #ffffff;
+    min-width: 300px;
+  }
+
+  /* Style padding on input with the file type for bigger text */
+  input[type="file"] {
+    padding: 1px 2px;
+  }
